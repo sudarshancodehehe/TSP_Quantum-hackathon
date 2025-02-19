@@ -35,34 +35,4 @@ These methods were applied to the COP and executed on the IBM quantum devices.
 ![VQE CPU times for the QAP](QuadraticAssignmentProblem/Results/VQE/VQE.jpg)
 
 
-## Findings
-The results show the limitations of NISQ devices, given that the classical optimisation techniques perform significantly better in terms of computational time, success rate, feasibility and uncertainty percentage. Furthermore, given the limited number of available qubits and limitations in circuit size - the practical use of NISQ devices in this class of problem is still in its infancy. VQE and QAOA performed similarly in terms of success rate, feasibility and uncertainty percentage. However, QAOA is limited to fewer instances and has a longer computational time than VQE. The performance of NISQ devices could prospectively improve in the future as quantum technology evolves. The introduction of the conditional reset feature with new basis gates did not show improvement in any metrics. In future work, other available formulations - such as QUBO and ADMM- could be investigated. The promise of IBM's devices with higher-performing processors and more qubits provides hope for higher quality solutions for COP.
-
-## Qiskit
-[Qiskit](https://qiskit.org/) is an open-source software development kit (SDK) for working with OpenQASM and the IBM Q quantum processors.
-### How to install Qiskit
-Details on the installation of Qiskit can be found [here](https://qiskit.org/documentation/getting_started.html).
-
-## Acknowledgement
-The authors of this research acknowledge the [University of the Witwatersrand, Johannesburg](https://www.wits.ac.za/) contribution through its support and Quantum Computing resources, which made this research possible. Furthermore, we acknowledge the use of IBM Quantum services for this work. The views expressed are those of the authors and do not reflect IBM's official policy or position or the IBM Quantum team.
-
-## Citations
-
-```
-@inproceedings{chieza2020computational,
-  title={On the Computational Performance of IBM Quantum Devices Applied to Combinatorial Optimisation Problems},
-  author={Chieza, HA and Khumalo, MT and Prag, K and Woolway, M},
-  booktitle={2020 7th International Conference on Soft Computing \& Machine Intelligence (ISCMI)},
-  pages={260--264},
-  year={2020},
-  organization={IEEE}
-}
-
-@article{khumalo2021investigation,
-  title={An investigation of IBM Quantum Computing deviceperformance on Combinatorial Optimisation Problems},
-  author={Khumalo, Maxine T and Chieza, Hazel A and Prag, Krupa and Woolway, Matthew},
-  journal={arXiv preprint arXiv:2107.03638},
-  year={2021}
-}
-```
 
